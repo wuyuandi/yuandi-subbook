@@ -1,3 +1,16 @@
+
+/*
+ *  Copyright (c) $2018.CMPUT301 Wi18,university of Alberta -All Rights Reserved.
+ *  You may use,distribute or modify this code under terms and condition of code of student Behavior
+ *  at University of Alberta.
+ *  You can find a copy of the license in this project. Otherwise, please contace yuandi@ualberta.ca
+ *
+ */
+
+/**
+ * you may need to use cold boot now in  AVD manager -> you virtual device
+ */
+
 package com.example.wuyuandi.yuandi_subbook;
 
 import android.content.Intent;

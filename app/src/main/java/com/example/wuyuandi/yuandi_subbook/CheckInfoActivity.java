@@ -1,3 +1,12 @@
+
+/*
+ *  Copyright (c) $2018.CMPUT301 Wi18,university of Alberta -All Rights Reserved.
+ *  You may use,distribute or modify this code under terms and condition of code of student Behavior
+ *  at University of Alberta.
+ *  You can find a copy of the license in this project. Otherwise, please contace yuandi@ualberta.ca
+ * /
+ */
+
 package com.example.wuyuandi.yuandi_subbook;
 
 import android.content.Intent;
@@ -25,6 +34,11 @@ public class CheckInfoActivity extends AppCompatActivity {
     private ArrayList<subscription> subers = new ArrayList<subscription>();
     private subscription sub;
     private int position;
+
+    /*
+    when get into the page xml file, it connect to activity_edit.xml and show out the infomation
+    that usr click
+     */
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +95,10 @@ public class CheckInfoActivity extends AppCompatActivity {
         loadFromFile();
     }
 
-
+    /*
+    copy from lonely twitter
+    it can load the information from the file by using gson
+     */
 
     private void loadFromFile(){
         try{
@@ -95,6 +112,11 @@ public class CheckInfoActivity extends AppCompatActivity {
             subers = new ArrayList<subscription>();
         }
     }
+
+    /*
+    copy from lonely twitter
+    it can save the information to the file by using gson
+     */
 
     private void saveInFile(){
 

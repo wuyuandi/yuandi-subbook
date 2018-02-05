@@ -1,3 +1,12 @@
+
+/*
+ *  Copyright (c) $2018.CMPUT301 Wi18,university of Alberta -All Rights Reserved.
+ *  You may use,distribute or modify this code under terms and condition of code of student Behavior
+ *  at University of Alberta.
+ *  You can find a copy of the license in this project. Otherwise, please contace yuandi@ualberta.ca
+ * /
+ */
+
 package com.example.wuyuandi.yuandi_subbook;
 
 
@@ -54,6 +63,10 @@ public class AddSubscription extends AppCompatActivity {
         });
 
     }
+    /**
+    the function will check the input by get those from the xml file
+     **/
+
     private void checkInput(){
         final EditText subName = (EditText) findViewById(R.id.sub_name);
         final EditText subDate = (EditText) findViewById(R.id.sub_date);
@@ -78,6 +91,11 @@ public class AddSubscription extends AppCompatActivity {
             finish();
         }
     }
+
+    /*
+    copy from lonely twitter
+    it can load the information from the file by using gson
+     */
     private void loadFromFile(){
         try {
             FileInputStream files = openFileInput(FILENAME);
@@ -93,6 +111,10 @@ public class AddSubscription extends AppCompatActivity {
 
         }
     }
+    /*
+    copy from lonely twitter
+    it can save the information from the file by using gson
+    */
     private void saveInFile(){
         try{
             FileOutputStream fos = openFileOutput(FILENAME,0);

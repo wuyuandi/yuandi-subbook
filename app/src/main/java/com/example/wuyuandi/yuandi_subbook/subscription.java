@@ -1,3 +1,12 @@
+
+/*
+ *  Copyright (c) $2018.CMPUT301 Wi18,university of Alberta -All Rights Reserved.
+ *  You may use,distribute or modify this code under terms and condition of code of student Behavior
+ *  at University of Alberta.
+ *  You can find a copy of the license in this project. Otherwise, please contace yuandi@ualberta.ca
+ * /
+ */
+
 package com.example.wuyuandi.yuandi_subbook;
 
 import java.util.Date;

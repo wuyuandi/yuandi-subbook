@@ -1,0 +1,54 @@
+package com.example.wuyuandi.yuandi_subbook;
+
+import java.util.Date;
+
+public class subscription {
+    private String name;
+    private String date;
+    private float charge;
+    private String comment;
+
+    public subscription(String name, String date, float charge, String comment){
+        this.name = name;
+        this.date = date;
+        this.charge = charge;
+        this.comment = comment;
+    }
+    public String getName(){
+        return name;
+    }
+    public String getDate(){
+        return date;
+    }
+    public float getCharge(){
+        return charge;
+    }
+    public String getComment(){
+        return comment;
+    }
+
+
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setDate(String date){
+        this.date = date;
+    }
+    public void setCharge(float charge){
+        this.charge = charge;
+    }
+    public void setComment(String comment){
+        this.comment = comment;
+    }
+
+    public String toString(){
+        return "Subscription:"+ name +"\n" + "Date:"+ date + "     Price:"+charge;
+    }
+    /*public void changeSub(String name, String date, double charge, String comment) {
+        this.name = name;
+        this.date = date;
+        this.charge = charge;
+        this.comment = comment;
+    }*/
+
+}
